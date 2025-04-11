@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <meta content="width=device-width, initial-scale=1" />
+  <title>Florist Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="top-image">
+      <img src="images/14.svg" alt="Top Flowers" />
+    </div>
+
+    
+    <header class="header">
+      <h1 class="logo">  </h1>
+      <img src="images/15.svg" class="side-image" alt="Side Decoration" />
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   
+  
+      
+      <section class="contact-form">
+      
+       
+        <h2>Get in Touch with Us</h2>
+        <form id="contactForm" action="#" method="POST">
+          <table>
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td><input type="text" id="name" name="name" required/></td>
+            </tr>
+            <tr>
+              <td><label for="address">Address</label></td>
+              <td><input type="text" id="address" name="address"/></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input type="email" id="email" name="email"  /></td>
+            </tr>
+            
+            <tr>
+              <td><label for="country">Location</label></td>
+              <td>
+                <select id="Location" name="Location">
+                  <option value="Kathmandu">Kathmandu</option>
+                  <option value="Bhaktapur">Bhaktapur</option>
+                  <option value="Lalitpur">Lalitpur</option>
+                  <option value="Outside Valley">Outside Valley</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="message">Message</label></td>
+              <td><textarea id="message" name="message" rows="5" cols="30"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="buttons">
+                <input type="submit" value="Submit" style="margin-bottom: 15px;">
+                <input type="reset" value="Reset">
+              </td>
+            </tr>
+          </table>
+        </form>
+        
+      </section>
+    </div>
+    <div class="contact">
+    <a href=https://pathao.com/np/ target="_blank">
+        <img src="images/Pathao-logo (1).png"alt="Contact Us" class="contact-icon" />
+    </a>
+        <span class="contact-text">Tap to get to us right now</span>
+   
+ </div>
+      
+
+    <section class="contact-info">
+        <div class="contact-item">
+          <img src="images/4.svg"alt="Phone" />
+          <p>+977 456 7890</p>
+        </div>
+        <div class="contact-item">
+          <img src="images/2.svg" alt="Email" />
+          <a href=https://mail.google.com/mail target="_blank">
+          <p>info@floristhub.com</p>
+        </a>
+        </div>
+        <div class="contact-item">
+          <img src="images/1.svg"alt="Location" />
+          <p> Durbar Marg, Kathmandu</p>
+        </div>
+      </section>
+
+  
+    <footer class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </footer>
+      <script>
+       document.getElementById("contactForm").addEventListener("submit", function(event) {
+   event.preventDefault();
+   alert("Form submitted successfully!"); 
+   this.reset(); 
+});
+ 
+      </script>
+      
+    
+</body>
+</html>

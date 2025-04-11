@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" />
+  <title>Florist Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+   
+    <div class="top-image">
+      <img src="./images/14.svg" alt="Top Flowers" />
+    </div>
+
+  
+    <header class="header">
+      <h1 class="logo">  </h1>
+      <img src="images/15.svg" class="side-image" alt="Side Decoration" />
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    <div class="text">
+     <h2>Welcome to Florist Hub!</h2>
+        <br>
+
+        At Florist Hub, we believe in the power of flowers to bring joy, express love, and brighten any occasion. Whether you're celebrating a special moment, sending a thoughtful gift, or just looking to add some beauty to your day, we have the perfect blooms for you.<br>
+        <br>
+        Browse our stunning selection of fresh flowers, carefully arranged by our expert florists. From vibrant bouquets to elegant centerpieces, each arrangement is crafted with care and attention to detail.<br>
+        <br>
+        At Florist Hub, we're passionate about making every moment a little more beautiful. Let us help you find the perfect flowers for every occasion. Explore, shop, and bring home a touch of nature’s beauty today!</p>
+
+    
+    <main>
+       
+      <section class="image-grid">
+        <div class="image-item">
+          <img src="images/6.svg" alt="Flower 1" />
+        </div>
+        <div class="image-item">
+          <img src="images/7.svg" alt="Flower 2" />
+        </div>
+        <div class="image-item">
+          <img src="images/5.svg" alt="Flower 3" />
+        </div>
+      </section>
+     
+      <section class="carousel">
+        <div class="carousel-container" id="carousel-track">
+          <div class="carousel-slide"><img src="images/pexels-pixabay-267360.jpg" alt="Image 1" /></div>
+          <div class="carousel-slide"><img src="images/pexels-gabby-k-5874610.jpg" alt="Image 2" /></div>
+          <div class="carousel-slide"><img src="images/pexels-goumbik-306066.jpg" alt="Image 3" /></div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </section>
+
+      
+    </main>
+  
+  <footer class="footer-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+  </footer>
+
+ 
+  <script>
+
+alert("Hello Wecome To Florist Hub!!!");
+
+console.log('hello');
+    const track = document.getElementById('carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => showSlide(index - 1));
+    nextBtn.addEventListener('click', () => showSlide(index + 1));
+  </script>
+</body>
+</html>
